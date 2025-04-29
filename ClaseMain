@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        AplicacionAdmin admin = new AplicacionAdmin();
+        EmpSalarioFijo empsalfij1 = new EmpSalarioFijo(46520867, "Leo","Mari", 2020);
+        EmpSalarioFijo empsalfij2 = new EmpSalarioFijo(43220867, "Renzo","Rivarola", 2023);
+        EmpSalarioFijo empsalfij3 = new EmpSalarioFijo(41520372, "Alan","Zambrano", 2019);
+
+        EmpComision empcom1 = new EmpComision(43309123, "Tomas","Giaconne",2021,10);
+        EmpComision empcom2 = new EmpComision(43309123, "Miguel","Lopez",2021,15);
+        EmpComision empcom3 = new EmpComision(43309123, "Enzo","Zaniolo",2023,5);
+
+        admin.agregarEmpleado(empsalfij1);
+        admin.agregarEmpleado(empsalfij2);
+        admin.agregarEmpleado(empsalfij3);
+        admin.agregarEmpleado(empcom1);
+        admin.agregarEmpleado(empcom2);
+        admin.agregarEmpleado(empcom3);
+
+        admin.mostarSalarios();
+
+        admin.obtenerEmpleadoConMasComisiones();
+
+
+    }
+
+
+}
